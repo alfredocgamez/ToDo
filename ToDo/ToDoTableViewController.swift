@@ -39,9 +39,31 @@ class ToDoTableViewController: UITableViewController {
     
     //logic button
     @IBAction func addButtonTap(_ sender: Any) {
-        list.append("Item \(list.count+1)")
-        tableView.reloadData()
         
+        
+        //1. Create the alert controller.
+        let alert = UIAlertController(title: "Add Item", message: "Enter a text", preferredStyle: .alert)
+        
+        //2. Add the text field. You can configure it however you need.
+        alert.addTextField { (textField) in
+            textField.placeholder = "Task"
+        }
+        
+        // 3. Grab the value from the text field, and print it when the user clicks OK.
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+            
+            weak var weakSelf = self
+            
+            guard let field = alert?.textFields?[0], let text = field.text else{
+                return
+            }
+            weakSelf?.list.append(text)
+            weakSelf?.tableView.reloadData()
+
+        }))
+        
+        // 4. Present the alert.
+        self.present(alert, animated: true, completion: nil)
     }
     
 }
