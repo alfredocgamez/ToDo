@@ -12,6 +12,7 @@
 		C42593321FF82C2200A7ADB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42593311FF82C2200A7ADB6 /* Assets.xcassets */; };
 		C42593351FF82C2200A7ADB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42593331FF82C2200A7ADB6 /* LaunchScreen.storyboard */; };
 		C425933D1FF82F7700A7ADB6 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425933C1FF82F7700A7ADB6 /* ToDoTableViewController.swift */; };
+		C425933F1FF83BF500A7ADB6 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425933E1FF83BF500A7ADB6 /* NotesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C42593341FF82C2200A7ADB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C42593361FF82C2200A7ADB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C425933C1FF82F7700A7ADB6 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		C425933E1FF83BF500A7ADB6 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				C425932A1FF82C2200A7ADB6 /* AppDelegate.swift */,
 				C425933C1FF82F7700A7ADB6 /* ToDoTableViewController.swift */,
+				C425933E1FF83BF500A7ADB6 /* NotesTableViewController.swift */,
 				C425932E1FF82C2200A7ADB6 /* Main.storyboard */,
 				C42593311FF82C2200A7ADB6 /* Assets.xcassets */,
 				C42593331FF82C2200A7ADB6 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				C425932B1FF82C2200A7ADB6 /* AppDelegate.swift in Sources */,
 				C425933D1FF82F7700A7ADB6 /* ToDoTableViewController.swift in Sources */,
+				C425933F1FF83BF500A7ADB6 /* NotesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
