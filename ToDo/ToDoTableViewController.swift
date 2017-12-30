@@ -9,6 +9,8 @@
 import UIKit
 
 class ToDoTableViewController: UITableViewController {
+    
+    var list:[String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +22,26 @@ class ToDoTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        
+        return list.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cel = UITableViewCell(style: .default, reuseIdentifier: "cellItem")
+        cel.textLabel?.text = list[indexPath.row]
+        return cel
+    }
+    
+    //logic button
+    @IBAction func addButtonTap(_ sender: Any) {
+        list.append("Item \(list.count+1)")
+        tableView.reloadData()
+        
     }
     
 }
